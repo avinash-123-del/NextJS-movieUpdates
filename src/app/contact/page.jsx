@@ -7,7 +7,7 @@ import Form from "../components/Form"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
-const contact = () => {
+const Contact = () => {
 
     const contactCard = [
       {
@@ -59,7 +59,7 @@ Aos.init({duration:1000})
       </div>
       <br /><br />
       <div>
-        <h1 className="text-2xl font-bold text-stone-200 text-center">We'd love to hear <span className="text-red-600">from You</span></h1>
+        <h1 className="text-2xl font-bold text-stone-200 text-center">We&apos;d love to hear <span className="text-red-600">from You</span></h1>
         < Form/>
         <br />
         <iframe className="sm:inline-block hidden w-screen" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7446.341013568887!2d81.03767749123409!3d21.065851122370837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2945974c4968a9%3A0x1099add1b9c303a7!2sSingdai%2C%20Chhattisgarh%20491441!5e0!3m2!1sen!2sin!4v1688698688260!5m2!1sen!2sin" width={1530} height={400} style={{border:'0'}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
@@ -68,4 +68,4 @@ Aos.init({duration:1000})
   )
 }
 
-export default contact
+export default Contact

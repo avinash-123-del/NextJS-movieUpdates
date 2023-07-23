@@ -6,7 +6,7 @@ import { BallTriangle } from "react-loader-spinner";
 import { useState, useEffect } from "react";
 import MovieCard from "../components/MovieCard";
 
-const movie = ({ searchParams }) => {
+const Movie = ({ searchParams }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
   let [currentPage, setCurrentPage] = useState(1)
@@ -106,4 +106,4 @@ const movie = ({ searchParams }) => {
 
 }
 
-export default movie
+export default Movie
