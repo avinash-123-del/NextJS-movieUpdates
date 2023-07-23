@@ -11,7 +11,7 @@ const About = () => {
   },[])
   return (
     <div className="w-full m-auto relative bg-gradient-to-t from-black to-red-900 h-screen overflow-hidden">
-      <Image src="/moviebg.jpg" alt=""  height={100} width={300}/>
+      <Image src="/moviebg.jpg" alt=""  height={100} width={1700}/>
       <div className="absolute lg:w-[50%] w-[90%] text-sm sm:text-sm md:text-base sm:top-[300px] tab-min:top-[180px] sm:p-0 p-4 lg:top-[100px] lg:right-6">
         <p className="text-stone-200 text-5xl font-extrabold mb-10">Our <span className="text-red-600">Stories</span> </p>
         <p className="text-gray-400 sm:w-[80%]">MovieBook offers a grand collection of cinema formats. From its Mainstream to Gold Class Cinemas, Directors Cut to the latest sub brands - MovieBook ICON and MovieBook Superplex, the company has made exceptional technology like the IMAX®, 4DX and ECX (Enhanced Cinema Experience) accessible to its audience. VRs recent addition has been P[XL]  Indias first premium extra-large home grown big screen format for a truly enigmatic movie watching experience.</p>
