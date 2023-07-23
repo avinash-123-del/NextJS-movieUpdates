@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+
+@layer base {
+  .ourstory {
+    @apply grid grid-cols-2 items-center justify-between gap-2 sm:w-[500px] text-[10px] sm:text-sm text-stone-200
+  }
+  .ourstory>li>span{
+  @apply font-semibold text-yellow-400 mx-2
+  }
+  input,textarea{
+  @apply bg-stone-200 rounded-md text-black focus:outline-none px-3 py-1 
+  }
+  label{
+  @apply text-stone-200 text-start
+  }
+  form>div>button{
+  @apply bg-gradient-to-r from-green-900 to-green-700 text-stone-200 rounded-md px-2 py-1 hover:scale-105 duration-150
+  }
+  .pagination{
+  @apply flex items-center justify-center gap-7 text-sm sm:text-base
+  }
+  .pagination>button{
+  @apply bg-gray-900 px-2 py-1 rounded-sm text-stone-300 my-6 
+  }
+}
