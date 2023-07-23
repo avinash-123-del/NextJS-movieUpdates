@@ -32,7 +32,7 @@ const page = () => {
       "image_url": "https://mcdn.wallpapersafari.com/medium/27/92/5xX19w.jpg"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Your Move",
       "image_url": "https://mcdn.wallpapersafari.com/medium/27/39/NRP7dv.jpg"
     }
@@ -55,7 +55,7 @@ Aos.init({duration:1000})
       <div className="flex flex-wrap  sm:gap-8 gap-3 justify-center items-center px-2 py-4 transition-opacity opacity-100 duration-300 ">
         {
           trending_movies.map((movie) => (
-            <span  data-aos='fade-up' className="relative group ">
+            <span key={movie.id} data-aos='fade-up' className="relative group ">
               <img src={movie.image_url} alt={movie.title} width={400} className="rounded-md shadow-lg group-hover:scale-110 duration-300 hover:opacity-30"/>
               <span className="absolute -z-10 group-hover:z-10 text-stone-200 bottom-[100px] right-[150px] text-xl font-bold font-kanit">{movie.title}</span>
             </span>
