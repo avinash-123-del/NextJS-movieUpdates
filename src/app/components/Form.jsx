@@ -16,6 +16,7 @@ const Form = () => {
             [e.target.name]: e.target.value
         })
     }
+console.log(process.env.NAME);
 
     const handleSubmit = async (e) => {
         e.preventDefault()
