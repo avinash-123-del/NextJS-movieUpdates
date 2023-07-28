@@ -11,15 +11,18 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'login-bg': "url('/loginbg.jpg')"
       },
       screens: {
         'lg': '992px',
         // => @media (min-width: 992px) { ... }
         'tab': '769px',
-        'tab-min':'767'
+        'tab-min': '767'
       },
       fontFamily: {
-        'kanit' : ['Kanit', 'sans-serif']
+        'kanit': ['Kanit', 'sans-serif'],
+        'Courgette': ['Courgette', 'cursive'],
+        'Pacifico': ['Pacifico', 'cursive']
       }
     },
 
