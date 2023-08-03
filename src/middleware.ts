@@ -28,7 +28,8 @@ export function middleware(request: NextRequest) {
 // See "Matching Paths" below to learn more
 export const config = {
     matcher: [
-        '/',    
+        '/',
+        '/home',    
         '/movies/about',
         '/movies/movie',
         '/movies/movie/:path*',

@@ -21,8 +21,8 @@ const router = useRouter()
             toast.success('logged out')
             router.push('/')
             router.refresh()
-
         }
+        
     } catch (error) {
         console.log(error.message);
         toast.error('failed to logOut');
