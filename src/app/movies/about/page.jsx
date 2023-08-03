@@ -1,5 +1,5 @@
 'use client'
-import '../globals.css'
+import '../../globals.css'
 import Aos from 'aos'
 import Image from 'next/image'
 import 'aos/dist/aos.css'

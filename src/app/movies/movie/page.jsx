@@ -4,7 +4,7 @@ require('dotenv').config()
 import { BallTriangle } from "react-loader-spinner";
 
 import { useState, useEffect } from "react";
-import MovieCard from "../components/MovieCard";
+import MovieCard from "../../components/MovieCard";
 
 const Movie = ({ searchParams }) => {
   const [isLoading, setIsLoading] = useState(true);

@@ -36,10 +36,12 @@ const router = useRouter()
                 <Image src='/logo.png' width={100} height={50} alt='logo'/>
             </Link>
             <div className='hidden sm:flex font-semibold items-center justify-between gap-2 w-[40%]'>
+
                 <Link href='/movies/home'><span>Home</span></Link>
                 <Link href='/movies/about'><span>About</span></Link>
                 <Link href='/movies/movie'><span>Movie</span></Link>
                 <Link href='/movies/contact'><span>Contact</span></Link>
+
                 <span className='flex items-center justify-around gap-1 cursor-pointer' onClick={handleLogout}><AiOutlinePoweroff/><span>Logout</span></span>
             </div>
             <div className='sm:hidden font-bold' onClick={handleMenu}>Menu</div>
@@ -49,6 +51,7 @@ const router = useRouter()
                 <Link href='/movies/about'><span>About</span></Link>
                 <Link href='/movies/movie'><span>Movie</span></Link>
                 <Link href='/movies/contact'><span>Contact</span></Link>
+
                 <span className='flex items-center justify-around gap-1 cursor-pointer' onClick={handleLogout}><AiOutlinePoweroff/><span>Logout</span></span>
             </div>
             

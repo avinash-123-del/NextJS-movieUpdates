@@ -17,7 +17,7 @@ useEffect(() =>{
             className="rounded-md hover:scale-110 duration-300 " />
             <h1 className="py-1 text-stone-200 ">{data.title}</h1>
             <p className="text-[10px] text-stone-400 pb-1">{data.synopsis.substr(0,98)+'...'}</p>
-            <Link href={`/movie/${data.id}`}>
+            <Link href={`/movies/movie/${data.id}`}>
                 <button className="text-stone-100 text-[12px] rounded-lg px-2 py-1 mb-2 bg-gradient-to-r from-black to-gray-900 hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 hover:scale-110 duration-200">Read more</button>
             </Link>
             

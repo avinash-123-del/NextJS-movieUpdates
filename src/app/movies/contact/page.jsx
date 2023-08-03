@@ -3,7 +3,7 @@ import { Icon } from "react-icons-kit"
 import {ic_mail} from 'react-icons-kit/md/ic_mail'
 import {ic_question_answer} from 'react-icons-kit/md/ic_question_answer'
 import {ic_portrait} from 'react-icons-kit/md/ic_portrait'
-import Form from "../components/Form"
+import Form from "../../components/Form"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'

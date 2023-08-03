@@ -1,5 +1,6 @@
 import React from 'react'
 import LoginForm from './components/LoginForm'
+
 import Image from 'next/image'
 
 const Login = () => {
@@ -12,6 +13,7 @@ const Login = () => {
           <LoginForm />
         </div>
       </div>
+
     </div>
   )
 }

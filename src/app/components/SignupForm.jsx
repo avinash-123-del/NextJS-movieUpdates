@@ -8,7 +8,9 @@ const SignupForm = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
+
   const [signBTn, setSignBtn] = useState(false)
+
   const router = useRouter()
 
   const handleSubmit = async (e) => {
@@ -16,7 +18,9 @@ const SignupForm = () => {
     setSignBtn(!signBTn)
 
     try {
+
       setSignBtn(true)
+
       if (password === confirmPassword) {
         const res = await fetch('/api/signup', {
           method: 'POST',
@@ -38,6 +42,7 @@ const SignupForm = () => {
     } catch (error) {
       console.log(error);
     }
+
     finally{
       setSignBtn(false)
     }
@@ -45,6 +50,8 @@ const SignupForm = () => {
   
   return (
     <div className='my-8 md:w-[40%] w-[80%] m-auto'>
+
+
 
     <form onSubmit={handleSubmit}>
 
@@ -75,6 +82,7 @@ const SignupForm = () => {
           className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder='.................' required />
       </div>
 
+
       <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm mr-3 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         {signBTn ? (
           <div>
@@ -85,6 +93,7 @@ const SignupForm = () => {
          : 'Sign up'}
       </button>
  
+
       <Link href={'/'}>
         <button type="button" className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Login</button>
       </Link>

@@ -6,7 +6,10 @@ import Link from 'next/link'
 const LoginForm = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
     const [loginBtn, setLoginBtn] = useState(false)
+
+
 
     const router = useRouter()
 
@@ -14,7 +17,9 @@ const LoginForm = () => {
     const loginHandler = async (e) => {
         e.preventDefault();
         try {
+
             setLoginBtn(true)
+
             const res = await fetch("/api/login", {
                 method: 'POST',
                 headers: { 'Content-type': 'application/json' },
@@ -30,6 +35,7 @@ const LoginForm = () => {
             }
 
 
+
             else if (res.ok) {
                 toast.success('login success')
                 router.push('/')
@@ -42,6 +48,7 @@ const LoginForm = () => {
         }
 
         finally {
+
             setLoginBtn(false)
         }
     }
@@ -49,6 +56,7 @@ const LoginForm = () => {
 
     return (
         <div className='my-8 md:w-[40%] w-[80%] m-0 sm:m-0 pl-8 '>
+
             <form onSubmit={loginHandler}>
 
                 <div className="mb-6">
@@ -66,6 +74,7 @@ const LoginForm = () => {
                         onChange={(e) => setPassword(e.target.value)}
                         value={password}
                         id="password"
+
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder='..................' required />
                 </div>
 
@@ -87,6 +96,7 @@ const LoginForm = () => {
             <Link href={'/signup'}>
                 <p className='text-gray-100 font-light text-sm mt-8'> New user! <span className='text text-blue-300 italic'>please signup to register</span> </p>
             </Link>
+
 
         </div>
     )
