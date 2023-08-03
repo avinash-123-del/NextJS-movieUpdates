@@ -15,7 +15,7 @@ export function middleware(request: NextRequest) {
 
     if(isPublicPath && token){
         //return NextResponse.redirect('/')                   // this will also work
-        return NextResponse.redirect(new URL('/home' , request.nextUrl))                   
+        return NextResponse.redirect(new URL('/movies/home' , request.nextUrl))                   
     }
 
     if(!isPublicPath && !token){

@@ -36,19 +36,19 @@ const router = useRouter()
                 <Image src='/logo.png' width={100} height={50} alt='logo'/>
             </Link>
             <div className='hidden sm:flex font-semibold items-center justify-between gap-2 w-[40%]'>
-                <Link href='/home'><span>Home</span></Link>
-                <Link href='/about'><span>About</span></Link>
-                <Link href='/movie'><span>Movie</span></Link>
-                <Link href='/contact'><span>Contact</span></Link>
+                <Link href='/movies/home'><span>Home</span></Link>
+                <Link href='/movies/about'><span>About</span></Link>
+                <Link href='/movies/movie'><span>Movie</span></Link>
+                <Link href='/movies/contact'><span>Contact</span></Link>
                 <span className='flex items-center justify-around gap-1 cursor-pointer' onClick={handleLogout}><AiOutlinePoweroff/><span>Logout</span></span>
             </div>
             <div className='sm:hidden font-bold' onClick={handleMenu}>Menu</div>
 
             <div onClick={() => setMenu(!menu)} style={menu ? {top:'70px'} : {top:'-400px'} } className={'font-semibold flex sm:hidden absolute flex-col items-center justify-between gap-8 text-xl z-10 transition-all duration-300 right-[-30px] rounded-md py-3 bg-gradient-to-b from-red-950 to-red-900 w-[50%] text-stone-400'}>
-                <Link href='/home'><span>Home</span></Link>
-                <Link href='/about'><span>About</span></Link>
-                <Link href='/movie'><span>Movie</span></Link>
-                <Link href='/contact'><span>Contact</span></Link>
+                <Link href='/movies/home'><span>Home</span></Link>
+                <Link href='/movies/about'><span>About</span></Link>
+                <Link href='/movies/movie'><span>Movie</span></Link>
+                <Link href='/movies/contact'><span>Contact</span></Link>
                 <span className='flex items-center justify-around gap-1 cursor-pointer' onClick={handleLogout}><AiOutlinePoweroff/><span>Logout</span></span>
             </div>
             
