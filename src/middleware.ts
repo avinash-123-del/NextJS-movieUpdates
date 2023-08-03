@@ -29,11 +29,11 @@ export function middleware(request: NextRequest) {
 export const config = {
     matcher: [
         '/',    
-        '/about',
-        '/movie',
-        '/movie/:path*',
-        '/home',
-        '/contact',
+        '/movies/about',
+        '/movies/movie',
+        '/movies/movie/:path*',
+        '/movies/home',
+        '/movies/contact',
         '/signup',
     ],
   }
